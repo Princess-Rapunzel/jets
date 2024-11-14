@@ -8,23 +8,25 @@ namespace jets
 class Tri3 : public Elem
 {
 public:
-    Tri3(Node** nodes);
+    Tri3(std::initializer_list<Node> init_list, int id = INVALID_ID);
     Tri3 (Tri3 &&);
-    Tri3 (const Tri3 &);
+    Tri3 (const Tri3&);
     Tri3& operator= (const Tri3 &);
     Tri3& operator= (Tri3 &&);
 
     ~Tri3();
 
     virtual const Real& measure() const override;
-    virtual Elem& buid() override;
-    virtual ElemType& type() override;
+    virtual const ElemType type() override;
     virtual Real grad() override;
 
+    static Elem& buid();
     Real measure_coordinate(const Real& x, const Real& y, const Real &lambda) const;
 
     // Matrix& get_unit_stiffness_matrix() const;
 };
+
+std::ostream& operator << (std::ostream& os, const Tri3& tri);
 } // namespace jets
 
 

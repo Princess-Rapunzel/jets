@@ -95,6 +95,12 @@
         "ponit.C": "cpp",
         "node.C": "cpp",
         "dof_obj.C": "cpp",
-        "test2.C": "cpp"
+        "test2.C": "cpp",
+        "set": "cpp",
+        "dense_matrix.C": "cpp",
+        "dense_vector.C": "cpp",
+        "elem.C": "cpp",
+        "tri3.C": "cpp",
+        "edge.C": "cpp"
     }
 }

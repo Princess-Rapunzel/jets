@@ -13,5 +13,5 @@
 # set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 aux_source_directory(. DIR_SRCS)
 add_executable(test1 
-    ${COMMON_SRC} ${UTILS_SRC} ${DIR_SRCS}
+    ${COMMON_SRC} ${UTILS_SRC} ${MESH_SRC} ${GEO_SRC} ${NUM_SRC} ${DIR_SRCS}
 )

@@ -2,32 +2,63 @@
 
 namespace jets
 {
-Elem::Elem(Node** nodes): _nodes(nodes){}
-Elem::Elem (Elem &&) = delete;
-Elem::Elem (const Elem &) = delete;
-Elem& Elem::operator= (const Elem &) = delete;
-Elem& Elem::operator= (Elem &&) = delete;
+Elem::Elem(std::initializer_list<Node> init_list, int id):
+ _nodes(init_list), _edges(), _num_of_nodes(init_list.size()), _id(id) { }
+
+Elem::Elem (Elem && other) 
+{
+    _nodes = std::move(other._nodes);
+    _edges = std::move(other._edges);
+    _num_of_nodes = other._num_of_nodes;
+    _id = other._id;
+}
+
+Elem::Elem (const Elem& other)
+{
+    _nodes = other._nodes;
+    _edges = other._edges;
+    _num_of_nodes = other._num_of_nodes;
+    _id = other._id;
+}
+
+Elem& Elem::operator= (const Elem& other)
+{
+    if (this != &other)
+    {
+        _nodes = other._nodes;
+        _edges = other._edges;
+        _num_of_nodes = other._num_of_nodes;
+        _id = other._id;
+    }
+    return *this;
+}
+
+Elem& Elem::operator= (Elem&& other)
+{
+    if (this != &other)
+    {
+        _nodes = std::move(other._nodes);
+        _edges = std::move(other._edges);
+        _num_of_nodes = other._num_of_nodes;
+        _id = other._id;
+    }
+    return *this;
+}
 Elem::~Elem() = default;
 
-int Elem::num_of_nodes() const
-    { return _num_of_nodes; }
+int Elem::num_of_nodes() const { return _num_of_nodes; }
 
-const int& Elem::id() const
-    { return _id; }
+const int& Elem::id() const { return _id; }
 
-int& Elem::id()
-    { return _id; }
+int& Elem::id() { return _id; }
 
-Node* Elem::node(int i) const
-    { return _nodes[i]; }
+const Node& Elem::node(int i) const { return _nodes[i]; }
 
-const int& Elem::node_id(int i)
-    { return _nodes[i]->id(); }
+const int& Elem::node_id(int i) const { return _nodes[i].id(); }
 
-const std::vector<Edge>& Elem::edges()
-    {  return _edges; }
+const std::vector<Edge>& Elem::edges() const {  return _edges; }
 
-const int& Elem::num_of_edges()
+const int Elem::num_of_edges() const
 { 
     jets_assert_not_equal_to(_edges.size(), 0);
     return _edges.size();
@@ -36,8 +67,6 @@ const int& Elem::num_of_edges()
 void Elem::__init_edges()
 {
     for (int i = 0; i < _num_of_nodes; i++)
-    {
-        _edges.push_back(Edge(*_nodes[i], *_nodes[(i+1)%_num_of_nodes]));
-    }
+        _edges.push_back(Edge(&_nodes[i], &_nodes[(i+1)%_num_of_nodes]));
 }
 } // namespace jets

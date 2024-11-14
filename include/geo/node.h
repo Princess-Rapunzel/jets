@@ -11,6 +11,7 @@ namespace jets
 class Node
 {
 public:
+    static const int INVALID_ID = -1;
     Node();
     Node(Real x, Real y, Real z, int id);
     Node(const Node &n);
@@ -26,7 +27,6 @@ public:
     bool operator==(const Node& other) const;
 
     std::string get_info() const;
-    void print_info(std::ostream& os=out) const;
 private:
 Real _coords[JETS_MAX_DIM];
 int _id;
@@ -34,7 +34,7 @@ int _id;
 
 inline std::ostream & operator << (std::ostream & os, const Node & n)
 {
-  n.print_info(os);
+  os << n.get_info();
   return os;
 }
 } // namespace jets

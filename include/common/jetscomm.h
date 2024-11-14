@@ -137,6 +137,7 @@ enum class JETS_DIM: int {
 typedef JETS_DIM Dim;
 
 static constexpr unsigned int JETS_MAX_DIM = 3;
+typedef unsigned int size_type;
 
 static constexpr Real TOLERANCE = 1.e-6;
 

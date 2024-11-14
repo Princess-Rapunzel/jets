@@ -3,23 +3,11 @@
 namespace jets
 {
 
-Node::Node()
-{
-    _coords[0] = 0.0;
-    _coords[1] = 0.0;
-    _coords[2] = 0.0;
-    _id = -1;
-}
+Node::Node(): _id(INVALID_ID), _coords{0, 0, 0} { }
 
-Node::Node(Real x, Real y, Real z, int id)
-{
-    _coords[0] = x;
-    _coords[1] = y;
-    _coords[2] = z;
-    _id = id;
-}
+Node::Node(Real x, Real y, Real z, int id): _id(id), _coords{x, y, z} {}
 
-Node::Node(const Node& n)
+Node::Node(const Node& n): _id(n._id)
 {
     _coords[0] = n._coords[0];
     _coords[1] = n._coords[1];
@@ -52,12 +40,8 @@ bool Node::operator==(const Node& other) const{ return _id == other._id; }
 std::string Node::get_info() const
 {
     std::ostringstream oss;
-    oss << "Node id=" << _id << ", coords=(" << _coords[0] << ", " << _coords[1] << ", " << _coords[2] << ")";
+    oss << "(" << _coords[0] << ", " << _coords[1] << ", " << _coords[2] 
+    << " id=" << _id << ")";
     return oss.str();
-}
-
-void Node::print_info(std::ostream& os) const
-{
-    os << get_info() << std::endl;
 }
 } // namespace jets

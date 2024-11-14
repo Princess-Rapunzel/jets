@@ -12,16 +12,19 @@ project(jets)
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 
 include_directories(
-    # ${CMAKE_SOURCE_DIR}/include/common
+    ${CMAKE_SOURCE_DIR}/include/common
     ${CMAKE_SOURCE_DIR}/include/utils
     ${CMAKE_SOURCE_DIR}/include/geo
+    ${CMAKE_SOURCE_DIR}/include/mesh
+    ${CMAKE_SOURCE_DIR}/include/numerical
 )
-message(STATUS "CMAKE_SOURCE_DIR: " ${CMAKE_SOURCE_DIR})
+# message(STATUS "CMAKE_SOURCE_DIR: " ${CMAKE_SOURCE_DIR})
 
-# aux_source_directory(${CMAKE_SOURCE_DIR}/src/common COMMON_SRC)
-# aux_source_directory(${CMAKE_SOURCE_DIR}/src/utils UTILS_SRC)
-# aux_source_directory(${CMAKE_SOURCE_DIR}/src/mesh MESH_SRC)
-# aux_source_directory(${CMAKE_SOURCE_DIR}/src/geo GEO_SRC)
+aux_source_directory(${CMAKE_SOURCE_DIR}/src/common COMMON_SRC)
+aux_source_directory(${CMAKE_SOURCE_DIR}/src/utils UTILS_SRC)
+aux_source_directory(${CMAKE_SOURCE_DIR}/src/mesh MESH_SRC)
+aux_source_directory(${CMAKE_SOURCE_DIR}/src/geo GEO_SRC)
+aux_source_directory(${CMAKE_SOURCE_DIR}/src/numerical NUM_SRC)
 
 
 # Path of header files.
@@ -32,5 +35,5 @@ set(TEST1 test1)
 set(TEST2 test2)
 
 # Add subdirectories.
-# add_subdirectory(test/test1)
-add_subdirectory(test/test2)
+add_subdirectory(test/test1)
+# add_subdirectory(test/test2)

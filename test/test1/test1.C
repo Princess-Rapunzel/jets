@@ -1,16 +1,18 @@
 #include <iostream>
-// #include "jetsapp.h"
-#include "getpot.h"
-using namespace std;
+#include "tri3.h"
+#include "node.h"
+
+using namespace jets;
 
 int main(int argc, char *argv[])
 {
-    // jets::JetsApp app;
-    // app.init();
-    // GetPot* command_line = new GetPot(argc, argv);
-    // int n = command_line->follow(-1, "-n");
-    // cout << "n = " << n << endl;
-    cout << "123" << "456" << std::to_string(789) << endl;
-    system("pause");
+    Node node1(1, 2, 3, 1);
+    Node node2(4, 5, 6, 2);
+    Node node3(7, 8, 9, 3);
+    Tri3 tri({node1, node2, node3}, 1);
+    for (auto edge : tri.edges())
+    {
+        std::cout << edge << std::endl;
+    }
     return 0;
 }

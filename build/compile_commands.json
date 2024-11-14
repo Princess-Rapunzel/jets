@@ -1,0 +1,56 @@
+[
+{
+  "directory": "C:/Users/2506053232/Desktop/jets/build/test/test1",
+  "command": "D:\\APP\\MinGW\\mingw64\\bin\\g++.exe  @CMakeFiles/test1.dir/includes_CXX.rsp -g -o CMakeFiles\\test1.dir\\__\\__\\src\\common\\getpot.C.obj -c C:\\Users\\2506053232\\Desktop\\jets\\src\\common\\getpot.C",
+  "file": "C:/Users/2506053232/Desktop/jets/src/common/getpot.C",
+  "output": "test/test1/CMakeFiles/test1.dir/__/__/src/common/getpot.C.obj"
+},
+{
+  "directory": "C:/Users/2506053232/Desktop/jets/build/test/test1",
+  "command": "D:\\APP\\MinGW\\mingw64\\bin\\g++.exe  @CMakeFiles/test1.dir/includes_CXX.rsp -g -o CMakeFiles\\test1.dir\\__\\__\\src\\common\\jets.C.obj -c C:\\Users\\2506053232\\Desktop\\jets\\src\\common\\jets.C",
+  "file": "C:/Users/2506053232/Desktop/jets/src/common/jets.C",
+  "output": "test/test1/CMakeFiles/test1.dir/__/__/src/common/jets.C.obj"
+},
+{
+  "directory": "C:/Users/2506053232/Desktop/jets/build/test/test1",
+  "command": "D:\\APP\\MinGW\\mingw64\\bin\\g++.exe  @CMakeFiles/test1.dir/includes_CXX.rsp -g -o CMakeFiles\\test1.dir\\__\\__\\src\\common\\jetscomm.C.obj -c C:\\Users\\2506053232\\Desktop\\jets\\src\\common\\jetscomm.C",
+  "file": "C:/Users/2506053232/Desktop/jets/src/common/jetscomm.C",
+  "output": "test/test1/CMakeFiles/test1.dir/__/__/src/common/jetscomm.C.obj"
+},
+{
+  "directory": "C:/Users/2506053232/Desktop/jets/build/test/test1",
+  "command": "D:\\APP\\MinGW\\mingw64\\bin\\g++.exe  @CMakeFiles/test1.dir/includes_CXX.rsp -g -o CMakeFiles\\test1.dir\\__\\__\\src\\geo\\elem.C.obj -c C:\\Users\\2506053232\\Desktop\\jets\\src\\geo\\elem.C",
+  "file": "C:/Users/2506053232/Desktop/jets/src/geo/elem.C",
+  "output": "test/test1/CMakeFiles/test1.dir/__/__/src/geo/elem.C.obj"
+},
+{
+  "directory": "C:/Users/2506053232/Desktop/jets/build/test/test1",
+  "command": "D:\\APP\\MinGW\\mingw64\\bin\\g++.exe  @CMakeFiles/test1.dir/includes_CXX.rsp -g -o CMakeFiles\\test1.dir\\__\\__\\src\\geo\\node.C.obj -c C:\\Users\\2506053232\\Desktop\\jets\\src\\geo\\node.C",
+  "file": "C:/Users/2506053232/Desktop/jets/src/geo/node.C",
+  "output": "test/test1/CMakeFiles/test1.dir/__/__/src/geo/node.C.obj"
+},
+{
+  "directory": "C:/Users/2506053232/Desktop/jets/build/test/test1",
+  "command": "D:\\APP\\MinGW\\mingw64\\bin\\g++.exe  @CMakeFiles/test1.dir/includes_CXX.rsp -g -o CMakeFiles\\test1.dir\\__\\__\\src\\geo\\tri3.C.obj -c C:\\Users\\2506053232\\Desktop\\jets\\src\\geo\\tri3.C",
+  "file": "C:/Users/2506053232/Desktop/jets/src/geo/tri3.C",
+  "output": "test/test1/CMakeFiles/test1.dir/__/__/src/geo/tri3.C.obj"
+},
+{
+  "directory": "C:/Users/2506053232/Desktop/jets/build/test/test1",
+  "command": "D:\\APP\\MinGW\\mingw64\\bin\\g++.exe  @CMakeFiles/test1.dir/includes_CXX.rsp -g -o CMakeFiles\\test1.dir\\__\\__\\src\\numerical\\dense_matrix.C.obj -c C:\\Users\\2506053232\\Desktop\\jets\\src\\numerical\\dense_matrix.C",
+  "file": "C:/Users/2506053232/Desktop/jets/src/numerical/dense_matrix.C",
+  "output": "test/test1/CMakeFiles/test1.dir/__/__/src/numerical/dense_matrix.C.obj"
+},
+{
+  "directory": "C:/Users/2506053232/Desktop/jets/build/test/test1",
+  "command": "D:\\APP\\MinGW\\mingw64\\bin\\g++.exe  @CMakeFiles/test1.dir/includes_CXX.rsp -g -o CMakeFiles\\test1.dir\\__\\__\\src\\numerical\\dense_vector.C.obj -c C:\\Users\\2506053232\\Desktop\\jets\\src\\numerical\\dense_vector.C",
+  "file": "C:/Users/2506053232/Desktop/jets/src/numerical/dense_vector.C",
+  "output": "test/test1/CMakeFiles/test1.dir/__/__/src/numerical/dense_vector.C.obj"
+},
+{
+  "directory": "C:/Users/2506053232/Desktop/jets/build/test/test1",
+  "command": "D:\\APP\\MinGW\\mingw64\\bin\\g++.exe  @CMakeFiles/test1.dir/includes_CXX.rsp -g -o CMakeFiles\\test1.dir\\test1.C.obj -c C:\\Users\\2506053232\\Desktop\\jets\\test\\test1\\test1.C",
+  "file": "C:/Users/2506053232/Desktop/jets/test/test1/test1.C",
+  "output": "test/test1/CMakeFiles/test1.dir/test1.C.obj"
+}
+]

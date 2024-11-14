@@ -10,12 +10,15 @@
 
 namespace jets
 {
-class Elem
+JETS_ABSTRACT class Elem
 {
 public:
-    Elem(Node** nodes);
+
+    const static int INVALID_ID = -1;
+
+    Elem(std::initializer_list<Node> init_list, int id = INVALID_ID);
     Elem (Elem &&);
-    Elem (const Elem &);
+    Elem(const Elem &);
     Elem& operator= (const Elem &);
     Elem& operator= (Elem &&);
 
@@ -23,20 +26,19 @@ public:
 
 
     virtual const Real& measure() const = 0;
-    virtual Elem& buid() = 0;
-    virtual ElemType& type() = 0;
+    virtual const ElemType type() = 0;
     virtual Real grad() = 0;
 
     int num_of_nodes() const;
     const int& id() const;
     int& id();
-    Node* node(int i) const;
-    const int& node_id(int i);
+    const Node& node(int i) const;
+    const int& node_id(int i) const;
 
-    const std::vector<Edge>& edges();
-    const int& num_of_edges();
+    const std::vector<Edge>& edges() const;
+    const int num_of_edges() const;
 protected:
-    Node** _nodes;
+    std::vector<Node> _nodes;
     int _num_of_nodes;
     Real _measure;
     int _id;
