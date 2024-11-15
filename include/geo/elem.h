@@ -5,6 +5,7 @@
 #include "node.h"
 #include "elem_type.h"
 #include "edge.h"
+#include "dense_matrix.h"
 
 #include <vector>
 
@@ -27,7 +28,7 @@ public:
 
     virtual const Real& measure() const = 0;
     virtual const ElemType type() = 0;
-    virtual Real grad() = 0;
+    virtual DenseMatrix grad() const = 0;
 
     int num_of_nodes() const;
     const int& id() const;

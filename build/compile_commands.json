@@ -19,6 +19,12 @@
 },
 {
   "directory": "C:/Users/2506053232/Desktop/jets/build/test/test1",
+  "command": "D:\\APP\\MinGW\\mingw64\\bin\\g++.exe  @CMakeFiles/test1.dir/includes_CXX.rsp -g -o CMakeFiles\\test1.dir\\__\\__\\src\\geo\\edge.C.obj -c C:\\Users\\2506053232\\Desktop\\jets\\src\\geo\\edge.C",
+  "file": "C:/Users/2506053232/Desktop/jets/src/geo/edge.C",
+  "output": "test/test1/CMakeFiles/test1.dir/__/__/src/geo/edge.C.obj"
+},
+{
+  "directory": "C:/Users/2506053232/Desktop/jets/build/test/test1",
   "command": "D:\\APP\\MinGW\\mingw64\\bin\\g++.exe  @CMakeFiles/test1.dir/includes_CXX.rsp -g -o CMakeFiles\\test1.dir\\__\\__\\src\\geo\\elem.C.obj -c C:\\Users\\2506053232\\Desktop\\jets\\src\\geo\\elem.C",
   "file": "C:/Users/2506053232/Desktop/jets/src/geo/elem.C",
   "output": "test/test1/CMakeFiles/test1.dir/__/__/src/geo/elem.C.obj"

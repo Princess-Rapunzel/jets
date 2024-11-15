@@ -201,6 +201,30 @@ __/__/src/common/jetscomm.C.s:
 	cd /d C:\Users\2506053232\Desktop\jets\build && $(MAKE) $(MAKESILENT) -f test\test1\CMakeFiles\test1.dir\build.make test/test1/CMakeFiles/test1.dir/__/__/src/common/jetscomm.C.s
 .PHONY : __/__/src/common/jetscomm.C.s
 
+__/__/src/geo/edge.obj: __/__/src/geo/edge.C.obj
+.PHONY : __/__/src/geo/edge.obj
+
+# target to build an object file
+__/__/src/geo/edge.C.obj:
+	cd /d C:\Users\2506053232\Desktop\jets\build && $(MAKE) $(MAKESILENT) -f test\test1\CMakeFiles\test1.dir\build.make test/test1/CMakeFiles/test1.dir/__/__/src/geo/edge.C.obj
+.PHONY : __/__/src/geo/edge.C.obj
+
+__/__/src/geo/edge.i: __/__/src/geo/edge.C.i
+.PHONY : __/__/src/geo/edge.i
+
+# target to preprocess a source file
+__/__/src/geo/edge.C.i:
+	cd /d C:\Users\2506053232\Desktop\jets\build && $(MAKE) $(MAKESILENT) -f test\test1\CMakeFiles\test1.dir\build.make test/test1/CMakeFiles/test1.dir/__/__/src/geo/edge.C.i
+.PHONY : __/__/src/geo/edge.C.i
+
+__/__/src/geo/edge.s: __/__/src/geo/edge.C.s
+.PHONY : __/__/src/geo/edge.s
+
+# target to generate assembly for a file
+__/__/src/geo/edge.C.s:
+	cd /d C:\Users\2506053232\Desktop\jets\build && $(MAKE) $(MAKESILENT) -f test\test1\CMakeFiles\test1.dir\build.make test/test1/CMakeFiles/test1.dir/__/__/src/geo/edge.C.s
+.PHONY : __/__/src/geo/edge.C.s
+
 __/__/src/geo/elem.obj: __/__/src/geo/elem.C.obj
 .PHONY : __/__/src/geo/elem.obj
 
@@ -363,6 +387,9 @@ help:
 	@echo ... __/__/src/common/jetscomm.obj
 	@echo ... __/__/src/common/jetscomm.i
 	@echo ... __/__/src/common/jetscomm.s
+	@echo ... __/__/src/geo/edge.obj
+	@echo ... __/__/src/geo/edge.i
+	@echo ... __/__/src/geo/edge.s
 	@echo ... __/__/src/geo/elem.obj
 	@echo ... __/__/src/geo/elem.i
 	@echo ... __/__/src/geo/elem.s

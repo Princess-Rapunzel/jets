@@ -18,11 +18,10 @@ public:
 
     virtual const Real& measure() const override;
     virtual const ElemType type() override;
-    virtual Real grad() override;
+    virtual DenseMatrix grad() const override;
 
-    static Elem& buid();
     Real measure_coordinate(const Real& x, const Real& y, const Real &lambda) const;
-
+    DenseMatrix get_unit_stiffness_matrix() const;
     // Matrix& get_unit_stiffness_matrix() const;
 };
 

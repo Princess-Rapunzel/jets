@@ -219,4 +219,6 @@ test/test1/CMakeFiles/test1.dir/__/__/src/geo/elem.C.obj: \
  C:/Users/2506053232/Desktop/jets/include/geo/elem_type.h \
  C:/Users/2506053232/Desktop/jets/include/geo/edge.h \
  C:/Users/2506053232/Desktop/jets/include/common/jets.h \
- C:/Users/2506053232/Desktop/jets/include/common/jetscomm.h
+ C:/Users/2506053232/Desktop/jets/include/common/jetscomm.h \
+ C:/Users/2506053232/Desktop/jets/include/numerical/dense_matrix.h \
+ C:/Users/2506053232/Desktop/jets/include/numerical/base_matrix.h

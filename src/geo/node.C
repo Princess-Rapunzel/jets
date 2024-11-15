@@ -5,6 +5,8 @@ namespace jets
 
 Node::Node(): _id(INVALID_ID), _coords{0, 0, 0} { }
 
+Node::Node(Real x, Real y, int id): _id(id), _coords{x, y, 0} {}
+
 Node::Node(Real x, Real y, Real z, int id): _id(id), _coords{x, y, z} {}
 
 Node::Node(const Node& n): _id(n._id)

@@ -187,6 +187,22 @@ public:
     DenseMatrix submatrix(size_type m_start, size_type m_end, size_type n_start, size_type n_end) const;
 
     /**
+     * @brief Extracts a row from this DenseMatrix.
+     * 
+     * @param i Row index.
+     * @return A new DenseVector that is the row.
+     */
+    DenseVector row(size_type i) const;
+
+    /**
+     * @brief Extracts a column from this DenseMatrix.
+     * 
+     * @param j Column index.
+     * @return A new DenseVector that is the column.
+     */
+    DenseVector col(size_type j) const;
+
+    /**
      * @brief Prints this DenseMatrix to an output stream.
      * 
      * @param os Output stream.

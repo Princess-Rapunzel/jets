@@ -169,6 +169,24 @@ DenseMatrix DenseMatrix::submatrix(size_type m_start, size_type m_end, size_type
     return result;
 }
 
+DenseVector DenseMatrix::row(size_type i) const
+{
+    jets_assert_less(i, _m);
+    DenseVector result(_n);
+    for (size_type j = 0; j < _n; ++j)
+        result[j] = (*this)(i, j);
+    return result;
+}
+
+DenseVector DenseMatrix::col(size_type j) const
+{
+    jets_assert_less(j, _n);
+    DenseVector result(_m);
+    for (size_type i = 0; i < _m; ++i)
+        result[i] = (*this)(i, j);
+    return result;
+}
+
 void DenseMatrix::print(std::ostream& os=out) const
 {
     for (size_type i = 0; i < _m; ++i)

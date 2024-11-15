@@ -13,6 +13,7 @@ class Node
 public:
     static const int INVALID_ID = -1;
     Node();
+    Node(Real x, Real y, int id);
     Node(Real x, Real y, Real z, int id);
     Node(const Node &n);
     ~Node();

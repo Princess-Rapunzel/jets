@@ -1,5 +1,8 @@
-test/test1/CMakeFiles/test1.dir/test1.C.obj: \
- C:\Users\2506053232\Desktop\jets\test\test1\test1.C \
+test/test1/CMakeFiles/test1.dir/__/__/src/geo/edge.C.obj: \
+ C:\Users\2506053232\Desktop\jets\src\geo\edge.C \
+ C:/Users/2506053232/Desktop/jets/include/geo/edge.h \
+ C:/Users/2506053232/Desktop/jets/include/geo/node.h \
+ C:/Users/2506053232/Desktop/jets/include/utils/ostream_proxy.h \
  D:/APP/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/iostream \
  D:/APP/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/requires_hosted.h \
  D:/APP/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/x86_64-w64-mingw32/bits/c++config.h \
@@ -142,8 +145,6 @@ test/test1/CMakeFiles/test1.dir/test1.C.obj: \
  D:/APP/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/ostream.tcc \
  D:/APP/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/istream \
  D:/APP/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/istream.tcc \
- C:/Users/2506053232/Desktop/jets/include/geo/tri3.h \
- C:/Users/2506053232/Desktop/jets/include/geo/elem.h \
  C:/Users/2506053232/Desktop/jets/include/common/jetscomm.h \
  C:/Users/2506053232/Desktop/jets/include/common/jetscfg.h \
  D:/APP/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/functional \
@@ -196,13 +197,11 @@ test/test1/CMakeFiles/test1.dir/test1.C.obj: \
  D:/APP/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/tr1/poly_hermite.tcc \
  D:/APP/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/tr1/poly_laguerre.tcc \
  D:/APP/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/tr1/riemann_zeta.tcc \
- C:/Users/2506053232/Desktop/jets/include/utils/ostream_proxy.h \
  C:/Users/2506053232/Desktop/jets/include/common/jetsexp.h \
  C:/Users/2506053232/Desktop/jets/include/common/jetsbase.h \
  C:/Users/2506053232/Desktop/jets/include/common/idtypes.h \
  D:/APP/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stdint.h \
  D:/APP/MinGW/mingw64/x86_64-w64-mingw32/include/stdint.h \
- C:/Users/2506053232/Desktop/jets/include/geo/node.h \
  D:/APP/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/memory \
  D:/APP/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/stl_raw_storage_iter.h \
  D:/APP/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/align.h \
@@ -217,10 +216,5 @@ test/test1/CMakeFiles/test1.dir/test1.C.obj: \
  D:/APP/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/backward/auto_ptr.h \
  D:/APP/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/pstl/glue_memory_defs.h \
  D:/APP/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/pstl/execution_defs.h \
- C:/Users/2506053232/Desktop/jets/include/geo/elem_type.h \
- C:/Users/2506053232/Desktop/jets/include/geo/edge.h \
  C:/Users/2506053232/Desktop/jets/include/common/jets.h \
- C:/Users/2506053232/Desktop/jets/include/common/jetscomm.h \
- C:/Users/2506053232/Desktop/jets/include/numerical/dense_matrix.h \
- C:/Users/2506053232/Desktop/jets/include/numerical/base_matrix.h \
- C:/Users/2506053232/Desktop/jets/include/geo/node.h
+ C:/Users/2506053232/Desktop/jets/include/common/jetscomm.h
