@@ -2,8 +2,11 @@
 
 namespace jets
 {
-Elem::Elem(std::initializer_list<Node> init_list, int id):
+Elem::Elem(std::initializer_list<Node*> init_list, int id):
  _nodes(init_list), _edges(), _num_of_nodes(init_list.size()), _id(id) { }
+
+ Elem::Elem(std::vector<Node*> nodes, int id):
+    _nodes(nodes), _edges(), _num_of_nodes(nodes.size()), _id(id) { }
 
 Elem::Elem (Elem && other) 
 {
@@ -52,9 +55,19 @@ const int& Elem::id() const { return _id; }
 
 int& Elem::id() { return _id; }
 
-const Node& Elem::node(int i) const { return _nodes[i]; }
+bool Elem::valid_id() const { return _id != INVALID_ID; }
 
-const int& Elem::node_id(int i) const { return _nodes[i].id(); }
+const Node* Elem::node(int i) const 
+{
+    jets_assert_less(i, _num_of_nodes);
+    return _nodes[i]; 
+}
+
+const int& Elem::node_id(int i) const 
+{ 
+    jets_assert_less(i, _num_of_nodes);
+    return _nodes[i]->id();
+}
 
 const std::vector<Edge>& Elem::edges() const {  return _edges; }
 
@@ -67,6 +80,6 @@ const int Elem::num_of_edges() const
 void Elem::__init_edges()
 {
     for (int i = 0; i < _num_of_nodes; i++)
-        _edges.push_back(Edge(&_nodes[i], &_nodes[(i+1)%_num_of_nodes]));
+        _edges.push_back(Edge(_nodes[i], _nodes[(i+1)%_num_of_nodes]).sort());
 }
 } // namespace jets

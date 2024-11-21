@@ -15,7 +15,7 @@ namespace jets
  * @date   2024-10-26
  * @brief  Degree of freedom object
  */
-JETS_ABSTRACT class DofObject
+__jets_abstract__ class DofObject
 {
 
 public:
@@ -28,11 +28,11 @@ private:
     dof_id_type _id;
 };
 
-JETS_INLINE DofObject::DofObject() 
+__jets_inline__ DofObject::DofObject() 
 { jets_abstract_class(); }
 
-JETS_INLINE const dof_id_type& DofObject::id() const
+__jets_inline__ const dof_id_type& DofObject::id() const
 { return _id; }
-JETS_INLINE DofObject::~DofObject() = default;
+__jets_inline__ DofObject::~DofObject() = default;
 } // namespace jets
 #endif // __DOF_OBJ_H__

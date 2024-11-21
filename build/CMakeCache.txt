@@ -241,6 +241,9 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//The directory containing a CMake configuration file for Eigen3.
+Eigen3_DIR:PATH=D:/Download/eigen-3.4.0/build
+
 //Value Computed by CMake
 jets_BINARY_DIR:STATIC=C:/Users/2506053232/Desktop/jets/build
 
@@ -249,6 +252,15 @@ jets_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 jets_SOURCE_DIR:STATIC=C:/Users/2506053232/Desktop/jets
+
+//Value Computed by CMake
+test1_BINARY_DIR:STATIC=C:/Users/2506053232/Desktop/jets/build/test/test1
+
+//Value Computed by CMake
+test1_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+test1_SOURCE_DIR:STATIC=C:/Users/2506053232/Desktop/jets/test/test1
 
 
 ########################

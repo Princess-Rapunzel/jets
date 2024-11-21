@@ -1,20 +1,43 @@
 // #include "node.h"
-#include <vector>
+#include <unordered_map>
+#include <unordered_set>
 #include <string>
 #include <iostream>
-class A
+#include <set>
+
+class Edge
 {
 public:
-A (std::initializer_list<std::string> il) : _edges(il) {}
-std::vector<std::string> _edges;
+    Edge(const std::string& start, const std::string& end):
+    start_node(start), end_node(end) { }
+    ~Edge() = default;
+    bool operator==(const Edge& other) const
+    { return start_node == other.start_node && end_node == other.end_node; }
+
+const std::string& start_node;
+
+const std::string& end_node;
+
+friend class EdgeHash;
+};
+
+struct EdgeHash {
+    size_t operator()(const Edge& edge) const {
+        std::hash<std::string> hasher;
+        return hasher(edge.start_node) ^ hasher(edge.end_node);
+    }
+};
+
+struct EdgeEqual {
+    bool operator()(const Edge& lhs, const Edge& rhs) const {
+        return lhs == rhs;
+    }
 };
 
 int main(int argc, char const *argv[])
 {
-    // jets::Node n1(1.0, 2.0, 3.0, 1);
-    // n1.print_info();
-    A a({"a", "b", "c"});
-    std::cout << a._edges.size() << std::endl;
+    std::set<int> s = {1, 2, 3, 4, 5};
+    
     system("pause");
     return 0;
 }

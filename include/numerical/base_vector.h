@@ -5,7 +5,7 @@
 namespace jets
 {
 
-JETS_ABSTRACT class BaseVector
+__jets_abstract__ class BaseVector
 {
 public:
     BaseVector();
@@ -17,11 +17,11 @@ protected:
     size_type _m;
 };
 
-JETS_INLINE BaseVector::BaseVector() : _m(0) {}
-JETS_INLINE BaseVector::BaseVector(size_type size) : _m(size) {}
-JETS_INLINE BaseVector::BaseVector(const BaseVector& other) : _m(other._m) {}
-JETS_INLINE BaseVector::~BaseVector() = default;
-JETS_INLINE BaseVector::BaseVector(BaseVector&& other) : _m(other._m) {}
+__jets_inline__ BaseVector::BaseVector() : _m(0) {}
+__jets_inline__ BaseVector::BaseVector(size_type size) : _m(size) {}
+__jets_inline__ BaseVector::BaseVector(const BaseVector& other) : _m(other._m) {}
+__jets_inline__ BaseVector::~BaseVector() = default;
+__jets_inline__ BaseVector::BaseVector(BaseVector&& other) : _m(other._m) {}
 } // namespace jets
 
 

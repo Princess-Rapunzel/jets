@@ -19,6 +19,18 @@
 },
 {
   "directory": "C:/Users/2506053232/Desktop/jets/build/test/test1",
+  "command": "D:\\APP\\MinGW\\mingw64\\bin\\g++.exe  @CMakeFiles/test1.dir/includes_CXX.rsp -g -o CMakeFiles\\test1.dir\\__\\__\\src\\mesh\\aio_mesh.C.obj -c C:\\Users\\2506053232\\Desktop\\jets\\src\\mesh\\aio_mesh.C",
+  "file": "C:/Users/2506053232/Desktop/jets/src/mesh/aio_mesh.C",
+  "output": "test/test1/CMakeFiles/test1.dir/__/__/src/mesh/aio_mesh.C.obj"
+},
+{
+  "directory": "C:/Users/2506053232/Desktop/jets/build/test/test1",
+  "command": "D:\\APP\\MinGW\\mingw64\\bin\\g++.exe  @CMakeFiles/test1.dir/includes_CXX.rsp -g -o CMakeFiles\\test1.dir\\__\\__\\src\\mesh\\matlab_io.C.obj -c C:\\Users\\2506053232\\Desktop\\jets\\src\\mesh\\matlab_io.C",
+  "file": "C:/Users/2506053232/Desktop/jets/src/mesh/matlab_io.C",
+  "output": "test/test1/CMakeFiles/test1.dir/__/__/src/mesh/matlab_io.C.obj"
+},
+{
+  "directory": "C:/Users/2506053232/Desktop/jets/build/test/test1",
   "command": "D:\\APP\\MinGW\\mingw64\\bin\\g++.exe  @CMakeFiles/test1.dir/includes_CXX.rsp -g -o CMakeFiles\\test1.dir\\__\\__\\src\\geo\\edge.C.obj -c C:\\Users\\2506053232\\Desktop\\jets\\src\\geo\\edge.C",
   "file": "C:/Users/2506053232/Desktop/jets/src/geo/edge.C",
   "output": "test/test1/CMakeFiles/test1.dir/__/__/src/geo/edge.C.obj"
@@ -34,6 +46,12 @@
   "command": "D:\\APP\\MinGW\\mingw64\\bin\\g++.exe  @CMakeFiles/test1.dir/includes_CXX.rsp -g -o CMakeFiles\\test1.dir\\__\\__\\src\\geo\\node.C.obj -c C:\\Users\\2506053232\\Desktop\\jets\\src\\geo\\node.C",
   "file": "C:/Users/2506053232/Desktop/jets/src/geo/node.C",
   "output": "test/test1/CMakeFiles/test1.dir/__/__/src/geo/node.C.obj"
+},
+{
+  "directory": "C:/Users/2506053232/Desktop/jets/build/test/test1",
+  "command": "D:\\APP\\MinGW\\mingw64\\bin\\g++.exe  @CMakeFiles/test1.dir/includes_CXX.rsp -g -o CMakeFiles\\test1.dir\\__\\__\\src\\geo\\point.C.obj -c C:\\Users\\2506053232\\Desktop\\jets\\src\\geo\\point.C",
+  "file": "C:/Users/2506053232/Desktop/jets/src/geo/point.C",
+  "output": "test/test1/CMakeFiles/test1.dir/__/__/src/geo/point.C.obj"
 },
 {
   "directory": "C:/Users/2506053232/Desktop/jets/build/test/test1",
@@ -58,5 +76,23 @@
   "command": "D:\\APP\\MinGW\\mingw64\\bin\\g++.exe  @CMakeFiles/test1.dir/includes_CXX.rsp -g -o CMakeFiles\\test1.dir\\test1.C.obj -c C:\\Users\\2506053232\\Desktop\\jets\\test\\test1\\test1.C",
   "file": "C:/Users/2506053232/Desktop/jets/test/test1/test1.C",
   "output": "test/test1/CMakeFiles/test1.dir/test1.C.obj"
+},
+{
+  "directory": "C:/Users/2506053232/Desktop/jets/build/test/test1",
+  "command": "D:\\APP\\MinGW\\mingw64\\bin\\g++.exe  @CMakeFiles/test1.dir/includes_CXX.rsp -g -o CMakeFiles\\test1.dir\\u_exact.C.obj -c C:\\Users\\2506053232\\Desktop\\jets\\test\\test1\\u_exact.C",
+  "file": "C:/Users/2506053232/Desktop/jets/test/test1/u_exact.C",
+  "output": "test/test1/CMakeFiles/test1.dir/u_exact.C.obj"
+},
+{
+  "directory": "C:/Users/2506053232/Desktop/jets/build/test/test1",
+  "command": "D:\\APP\\MinGW\\mingw64\\bin\\g++.exe  @CMakeFiles/test1.dir/includes_CXX.rsp -g -o CMakeFiles\\test1.dir\\__\\__\\src\\integral\\quadrature_gauss.C.obj -c C:\\Users\\2506053232\\Desktop\\jets\\src\\integral\\quadrature_gauss.C",
+  "file": "C:/Users/2506053232/Desktop/jets/src/integral/quadrature_gauss.C",
+  "output": "test/test1/CMakeFiles/test1.dir/__/__/src/integral/quadrature_gauss.C.obj"
+},
+{
+  "directory": "C:/Users/2506053232/Desktop/jets/build/test/test1",
+  "command": "D:\\APP\\MinGW\\mingw64\\bin\\g++.exe  @CMakeFiles/test1.dir/includes_CXX.rsp -g -o CMakeFiles\\test1.dir\\__\\__\\src\\system\\linear.system.C.obj -c C:\\Users\\2506053232\\Desktop\\jets\\src\\system\\linear.system.C",
+  "file": "C:/Users/2506053232/Desktop/jets/src/system/linear.system.C",
+  "output": "test/test1/CMakeFiles/test1.dir/__/__/src/system/linear.system.C.obj"
 }
 ]

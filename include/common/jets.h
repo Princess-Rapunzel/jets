@@ -78,11 +78,15 @@ const int invalid_int = std::numeric_limits<int>::max();
 #define jets_unused(x) (void)(x)
 
 // Some jets modifiers that help programming.
-#define JETS_INLINE inline
+
 /**
- * The \p JETS_ABSTRACT macro is used to indicate that a class which
+ * Indicates that a function is inline.
+ */
+#define __jets_inline__ inline
+/**
+ * The `__jets_abstract__` macro is used to indicate that a class which
  * is abstract and should not be instantiated. 
  */
-#define JETS_ABSTRACT
+#define __jets_abstract__
 } // namespace jets
 #endif // __JETS_H__

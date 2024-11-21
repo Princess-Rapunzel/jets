@@ -37,26 +37,26 @@ void stop(const char * file, int line, const char * date, const char * time)
 
 void report_error(const char * file, int line, const char * date, const char * time, std::ostream & os)
 {
-  // // It is possible to have an error *inside* report_error; e.g. from
-  // // print_trace.  We don't want to infinitely recurse.
-  // static bool reporting_error = false;
-  // if (reporting_error)
-  //   {
-  //     // I heard you like error reporting, so we put an error report
-  //     // in report_error() so you can report errors from the report.
-  //     os << "jets encountered an error while attempting to report_error." << std::endl;
-  //     return;
-  //   }
-  // reporting_error = true;
+  // It is possible to have an error *inside* report_error; e.g. from
+  // print_trace.  We don't want to infinitely recurse.
+  static bool reporting_error = false;
+  if (reporting_error)
+    {
+      // I heard you like error reporting, so we put an error report
+      // in report_error() so you can report errors from the report.
+      os << "jets encountered an error while attempting to report_error." << std::endl;
+      return;
+    }
+  reporting_error = true;
 
   // if (jets::global_n_processors() == 1 ||
   //     jets::on_command_line("--print-trace"))
   //   jets::print_trace(os);
   // else
   //   jets::write_traceout();
-  // jets::MacroFunctions::here(file, line, date, time, os);
+  jets::MacroFunctions::here(file, line, date, time, os);
 
-  // reporting_error = false;
+  reporting_error = false;
 }
 } // namespace MacroFunctions
 
