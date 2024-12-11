@@ -136,14 +136,14 @@ __jets_inline__ BaseMesh::~BaseMesh() = default;
 __jets_inline__ size_type BaseMesh::dim() const { return _dim; }
 __jets_inline__ void BaseMesh::set_dim(size_type dim) { this->_dim = dim; }
 #ifdef JETS_HAVE_MPI
-JETS_INLINE processor_id_type BaseMesh::n_processors() const { return _n_processors; }
-JETS_INLINE processor_id_type BaseMesh::processor_id() const { return _processor_id; }
+__jets_inline__ processor_id_type BaseMesh::n_processors() const { return _n_processors; }
+__jets_inline__ processor_id_type BaseMesh::processor_id() const { return _processor_id; }
 #else
 __jets_inline__ int BaseMesh::n_processors() const { return 1; }
 __jets_inline__ int BaseMesh::processor_id() const { return 0; }
 #endif // JETS_HAVE_MPI
 #ifdef JETS_HAVE_OPENMP
-JETS_INLINE unsigned int BaseMesh::n_threads() const { return _n_threads; }
+__jets_inline__ unsigned int BaseMesh::n_threads() const { return _n_threads; }
 #else
 __jets_inline__ unsigned int BaseMesh::n_threads() const { return 1; }
 #endif // JETS_HAVE_OPENMP

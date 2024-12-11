@@ -47,7 +47,11 @@ Elem& Elem::operator= (Elem&& other)
     }
     return *this;
 }
-Elem::~Elem() = default;
+Elem::~Elem()
+{
+    for (Node*& node : _nodes)
+        delete node;
+};
 
 int Elem::num_of_nodes() const { return _num_of_nodes; }
 

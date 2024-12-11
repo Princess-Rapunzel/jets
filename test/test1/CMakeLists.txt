@@ -19,5 +19,6 @@ add_executable(test1
     ${GEO_SRC}          ${NUM_SRC}      ${DIR_SRCS}
     ${INTEGRAL_SRC}     ${SYSTEM_SRC}
 )
-target_link_libraries(${PROJECT_NAME} PUBLIC Eigen3::Eigen)
+target_link_libraries(test1 ${MPI_LIBRARIES})
+# target_link_libraries(${PROJECT_NAME} PUBLIC Eigen3::Eigen)
 # target_link_libraries(${TEST1} PUBLIC Eigen3::Eigen)

@@ -31,6 +31,11 @@ public:
     virtual const ElemType type() = 0;
     virtual DenseMatrix grad() const = 0;
 
+    /**
+     * \brief Shape function for the i-th node of the element.
+     */
+    virtual Real shape_function(int i, const Point &p) const = 0;
+
     int num_of_nodes() const;
     const int& id() const;
     bool valid_id() const;

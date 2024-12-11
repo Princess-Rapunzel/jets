@@ -3,6 +3,7 @@
 #include "quadrature.h"
 namespace jets
 {
+
 class QuadratureGauss : public Quadrature
 {
 public:
@@ -13,18 +14,20 @@ public:
     QuadratureGauss &operator=(const QuadratureGauss &q) = default;
     QuadratureGauss &operator=(QuadratureGauss &&q) = default;
 
-    virtual ~QuadratureGauss() = default;
+    ~QuadratureGauss() = default;
 
     /**
      * \returns \p QGAUSS.
      */
-  virtual QuadratureType type() const override;
+  QuadratureType type() const override final;
+
+  Real integrate(Real (*f)(const Point&), const ElemType elem_type) const;
 
 private:
 
-  virtual void init_1D (const ElemType) override;
-  virtual void init_2D (const ElemType) override;
-  virtual void init_3D (const ElemType) override;
+  // void init_1D (const ElemType) override final;
+  // void init_2D (const ElemType) override final;
+  // void init_3D (const ElemType) override final;
 };
 } // namespace jets
 

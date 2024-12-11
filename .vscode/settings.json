@@ -135,6 +135,19 @@
         "alignedvector3": "cpp",
         "openglsupport": "cpp",
         "u_exact.C": "cpp",
-        "exact_solution.C": "cpp"
+        "exact_solution.C": "cpp",
+        "fe.C": "cpp",
+        "fe_lagrange_shape_2D.C": "cpp",
+        "adolcforward": "cpp",
+        "mprealsupport": "cpp",
+        "mpi-test.C": "cpp",
+        "idtypes.h": "c",
+        "message_tag.C": "cpp",
+        "mpi.h": "c",
+        "communicator.C": "cpp",
+        "semipermanent.C": "cpp",
+        "jetsinit.C": "cpp",
+        "request.C": "cpp",
+        "jetslog.C": "cpp"
     }
 }

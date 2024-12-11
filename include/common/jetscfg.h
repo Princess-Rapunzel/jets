@@ -38,4 +38,8 @@
  * Enable trowing exceptions.
  */
 #define JETS_ENABLE_EXCEPTIONS
+
+#define JETS_HAVE_MPI
+
+#define JETS_HAVE_EIGEN
 #endif // __JETS_CONFIG_H__

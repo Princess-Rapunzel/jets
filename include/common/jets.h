@@ -24,13 +24,15 @@ public:
 #endif // JETS_HAVE_MPI
     virtual ~JetsApp();
 
-    // virtual void init();
-    // virtual void run();
     virtual void shutdown() {this->~JetsApp();};
 
     const parallel::Communicator & comm() const { return *_comm; }
+
+    // const processor_id_type& n_processors() const { return _n_processors; };
+    // const processor_id_type& processor_id() const { return _processor_id; };
 private:
     parallel::Communicator * _comm;
+    bool _is_initialized;
 };
 
 /**
