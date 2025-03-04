@@ -1,6 +1,6 @@
 #ifndef __JETS_QUADRATURE_H__
 #define __JETS_QUADRATURE_H__
-
+#include "quadrature_type.h"
 #include "jets.h"
 #include "point.h"
 #include "elem_type.h"
@@ -9,7 +9,6 @@
 namespace jets
 {
 // Forward declarations.
-class QuadratureType;
 
 typedef unsigned int q_order;
 
@@ -110,7 +109,7 @@ protected:
    * derived classes, they are only maintained for backwards
    * compatibility and will eventually be removed.
    */
-  virtual void init_1D (const ElemType type=INVALID_TYPE);
+  // virtual void init_1D (const ElemType type=INVALID_TYPE);
 
   /**
    * Initializes the 2D quadrature rule by filling the points and
@@ -124,7 +123,7 @@ protected:
    * derived classes, they are only maintained for backwards
    * compatibility and will eventually be removed.
    */
-  virtual void init_2D (const ElemType type=INVALID_TYPE);
+  // virtual void init_2D (const ElemType type=INVALID_TYPE);
 
   /**
    * Initializes the 3D quadrature rule by filling the points and
@@ -138,7 +137,7 @@ protected:
    * derived classes, they are only maintained for backwards
    * compatibility and will eventually be removed.
    */
-  virtual void init_3D (const ElemType type=INVALID_TYPE);
+  // virtual void init_3D (const ElemType type=INVALID_TYPE);
 
 protected:
   size_type _dim;

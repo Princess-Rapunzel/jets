@@ -2,6 +2,7 @@ test/test1/CMakeFiles/test1.dir/__/__/src/integral/quadrature_gauss.C.obj: \
  C:\Users\2506053232\Desktop\jets\src\integral\quadrature_gauss.C \
  C:/Users/2506053232/Desktop/jets/include/integral/quadrature_gauss.h \
  C:/Users/2506053232/Desktop/jets/include/integral/quadrature.h \
+ C:/Users/2506053232/Desktop/jets/include/integral/quadrature_type.h \
  C:/Users/2506053232/Desktop/jets/include/common/jets.h \
  C:/Users/2506053232/Desktop/jets/include/common/jetscfg.h \
  C:/Users/2506053232/Desktop/jets/include/common/jetscomm.h \
@@ -219,4 +220,5 @@ test/test1/CMakeFiles/test1.dir/__/__/src/integral/quadrature_gauss.C.obj: \
  D:/APP/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/bits/atomic_lockfree_defines.h \
  D:/APP/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/backward/auto_ptr.h \
  D:/APP/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/pstl/glue_memory_defs.h \
- D:/APP/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/pstl/execution_defs.h
+ D:/APP/MinGW/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/c++/pstl/execution_defs.h \
+ C:/Users/2506053232/Desktop/jets/include/integral/quadrature_type.h

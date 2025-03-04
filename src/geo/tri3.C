@@ -61,6 +61,16 @@ DenseMatrix Tri3::grad() const
     return grad_matrix.mult(1/(_measure * 2));
 }
 
+Real Tri3::shape_function(int i, const Point &p) const
+{
+    Real x = p.x();
+    Real y = p.y();
+    if (i == 0) return (x * (_nodes[1]->y() - _nodes[2]->y()) + y * (_nodes[2]->x() - _nodes[1]->x()) + _nodes[1]->x() * _nodes[2]->y() - _nodes[2]->x() * _nodes[1]->y()) / (2 * _measure);
+    else if (i == 1) return (x * (_nodes[2]->y() - _nodes[0]->y()) + y * (_nodes[0]->x() - _nodes[2]->x()) + _nodes[2]->x() * _nodes[0]->y() - _nodes[0]->x() * _nodes[2]->y()) / (2 * _measure);
+    else if (i == 2) return (x * (_nodes[0]->y() - _nodes[1]->y()) + y * (_nodes[1]->x() - _nodes[0]->x()) + _nodes[0]->x() * _nodes[1]->y() - _nodes[1]->x() * _nodes[0]->y()) / (2 * _measure);
+    else jets_error_msg("Invalid node index i: " << i);
+}
+
 Real Tri3::measure_coordinate(const Real& x, const Real& y, const Real &lambda) const
 {
     if (lambda == 1) return triangle_measure(x, y, _nodes[1]->x(), _nodes[1]->y(), _nodes[2]->x(), _nodes[2]->y()) / _measure;
@@ -86,7 +96,7 @@ DenseMatrix Tri3::get_unit_mass_matrix() const
     );
 }
 
-DenseVector Tri3::get_rhs_vector(Real (*rhs_func)(Point&), Quadrature* _q_rule) const
+DenseVector Tri3::get_rhs_vector(Real (*rhs_func)(Point&), Quadrature* qrule) const
 {
     //TODO: rhs vector should be computed by quadrature rule.
     DenseVector rhs(3);

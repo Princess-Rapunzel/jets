@@ -20,6 +20,14 @@ Real f(Point& p);
 
 Real g(Point& p);
 
+const std::string equaltion_info = "求解泊松方程：\n \
+-△u = f(x, y, z), (x, y, z) ∈ Ω\n \
+u = g(x, y, z), (x, y, z) ∈ ∂Ω\n \
+其中：\n \
+  Ω = {(x, y, z) | 0 < x < 1, 0 < y < 1, 0 < z < 1}\n \
+  f(x, y, z) = 0\n \
+  g(x, y, z) = u_exact(x, y, z) = cos(π/2*x)*sin(π/2*y)*cos(π/2*z) \n"; 
+
 int main(int argc, char *argv[])
 {
 
@@ -39,8 +47,8 @@ int main(int argc, char *argv[])
     system.set_boundary_func(g);
     system.assemble();
     system.solve();
-    
-    jets::out << "Solution found: " << std::endl;
+    jets::out << equaltion_info << std::endl;
+    jets::out << "数值解为: " << std::endl;
     jets::out << *system.solution() << std::endl;
     return 0;
 }

@@ -91,10 +91,14 @@ void LinearSystem::solve()
     std::set<size_type>* _bd_nodes_idx = new std::set<size_type>();
 
     __all_nodes_loopi__(mesh)
+    {
         _nodes_idx->insert(mesh->get_node(i).id());
+    }
 
     __boundary_nodes_loop__(mesh)
+    {
         _bd_nodes_idx->insert(_node->id());
+    }
     std::set<size_type>* _free_nodes_idx = new std::set<size_type>();
     calc_free_nodes_idx(_nodes_idx, _bd_nodes_idx, _free_nodes_idx);
 

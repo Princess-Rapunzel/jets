@@ -25,6 +25,7 @@ public:
     virtual const Real& measure() const override;
     virtual const ElemType type() override;
     virtual DenseMatrix grad() const override;
+    virtual Real shape_function(int i, const Point &p) const override;
 
     Real measure_coordinate(const Real& x, const Real& y, const Real &lambda) const;
     DenseMatrix get_unit_stiffness_matrix() const;

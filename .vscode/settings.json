@@ -135,6 +135,10 @@
         "alignedvector3": "cpp",
         "openglsupport": "cpp",
         "u_exact.C": "cpp",
-        "exact_solution.C": "cpp"
+        "exact_solution.C": "cpp",
+        "fe.C": "cpp",
+        "fe_lagrange_shape_2D.C": "cpp",
+        "adolcforward": "cpp",
+        "mprealsupport": "cpp"
     }
 }
