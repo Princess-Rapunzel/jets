@@ -20,15 +20,13 @@ public:
     ~AIOMesh();
     /**
      * @brief Read mesh from file.
-     * There are so many formats for mesh files, how to read mesh file is not
-     * clear. Therefore, this function will be implemented in derived classes.
+     * There are so many formats for mesh files.
      */
     void read_mesh(const std::string& filename) override final;
 
     /**
      * @brief Write mesh to file.
-     * There are so many formats for mesh files, how to write mesh file is not
-     * clear. Therefore, this function will be implemented in derived classes.
+     * There are so many formats for mesh files.
      */
     void write_mesh(const std::string& filename) const override final;
 

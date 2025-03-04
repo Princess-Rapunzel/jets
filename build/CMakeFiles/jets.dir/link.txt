@@ -1,3 +1,0 @@
-D:\APP\CMake\bin\cmake.exe -E rm -f CMakeFiles\jets.dir/objects.a
-D:\APP\MinGW\mingw64\bin\ar.exe qc CMakeFiles\jets.dir/objects.a @CMakeFiles\jets.dir\objects1.rsp
-D:\APP\MinGW\mingw64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\jets.dir/objects.a -Wl,--no-whole-archive -o C:\Users\2506053232\Desktop\jets\bin\jets.exe -Wl,--out-implib,C:\Users\2506053232\Desktop\jets\bin\libjets.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\jets.dir\linkLibs.rsp

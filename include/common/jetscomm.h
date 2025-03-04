@@ -145,7 +145,7 @@ static constexpr Real TOLERANCE = 1.e-6;
 #define jets_isinf(x) (std::isinf(x))
 #define jets_iscinf(x) (std::isinf(std::real(a)) || std::isinf(std::imag(a)))
 
-#ifdef jets_HAVE_MPI
+#ifdef JETS_HAVE_MPI
 /**
  * MPI Communicator used to initialize jets.
  */
@@ -157,7 +157,7 @@ extern MPI_Comm GLOBAL_COMM_WORLD;
  * "uni" stub.
  */
 extern int GLOBAL_COMM_WORLD;
-#endif // jets_HAVE_MPI
+#endif // JETS_HAVE_MPI
 
 // These are useful macros that behave like functions in the code.
 // If you want to make sure you are accessing a section of code just
@@ -392,6 +392,14 @@ inline Tnew cast_ptr (Told * oldvar)
 #else
   return(static_cast<Tnew>(oldvar));
 #endif
+}
+
+template <typename Tnew, typename Told>
+inline Tnew jets_cast_int (Told oldvar)
+{
+  jets_assert_equal_to
+    (oldvar, static_cast<Told>(static_cast<Tnew>(oldvar)));
+  return(static_cast<Tnew>(oldvar));
 }
 
 // static constexpr std::size_t jets_dim = JETS_DIM;
